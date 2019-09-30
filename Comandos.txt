@@ -11,8 +11,17 @@ docker container stop <CONTAINER ID>
 -- LOGS DEL CONTAINER
 docker container logs <CONTAINER ID || NAME>
 
--- LISTAR LOS PRICES CORRIENDO DENTRO DEL CONTENEDORES
+
+#######  ------------  WHAT'S GOING ON IN CONTAINERS  ---------------- ############
+-- LISTAR LOS PROCESOS CORRIENDO DENTRO DEL CONTENEDORES
 docker container top <CONTAINER ID || NAME>
+-- LISTAR DETALLES DE LA CONFIGURACION DEL CONTENEDOR 
+docker container inspect <CONTAINER ID || NAME>
+-- STADISTICAS DE PERFORMANCE DEL CONTENEDOR
+docker container stats <CONTAINER ID || NAME>
+
+#######  ------------  GETTING INSIDE MY CONTAINER ---------------- ############
+docker container run -it <IMAGEN> <COMANDO>
 
 
 
