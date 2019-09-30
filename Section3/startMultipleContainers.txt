@@ -1,0 +1,25 @@
+// ASIGNMENT 1
+
+1. RUn a nginx, mysql, and a httpd server 
+
+2. run all of the detached and name them
+
+3. nginx should listen to 80:80, httpd 8980:80 mysql on 3306:3306
+
+4. when running mysql, use the --env option (or -e) to pass in MYSQL_RANDOM_ROOT_PASSWORD=yes
+
+5. Use docker container logs on mysql to find the random password it created on startup
+
+6. Clean it all up with docker container stop and docker container rm 
+
+7. Use docker container ls to ensure everything is correct before and after cleanup
+
+docker container run --publish 80:80
+
+// Solución 
+docker container run --publish 80:80 --name ngisito --detach nginx
+docker container run --publish 8080:80 --name httpdsito --detach httpd
+docker container run --publish 3306:3306 --name mysqlsito --detach --env MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+docker container logs mysqlsito
+docker stop 47 25 59
+docker container rm  47 25 59

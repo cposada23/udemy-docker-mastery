@@ -1,3 +1,18 @@
+-- LISTA DE COMANDOS QUE PUEDO USAR PARA LOS CONTENEDORES 
+docker container --help
+
 -- NUEVA FORMA DE LISTAR LOS CONTENEDORES 
-docker container ls
+docker container ls //Lista solo contenedores activos
+docker container ls -a //Lista todos los contenedore (activos e inactivos)
+
+-- STOP A CONTAINER 
+docker container stop <CONTAINER ID>
+
+-- LOGS DEL CONTAINER
+docker container logs <CONTAINER ID || NAME>
+
+-- LISTAR LOS PRICES CORRIENDO DENTRO DEL CONTENEDORES
+docker container top <CONTAINER ID || NAME>
+
+
 
