@@ -1,0 +1,3 @@
+-- NUEVA FORMA DE LISTAR LOS CONTENEDORES 
+docker container ls
+

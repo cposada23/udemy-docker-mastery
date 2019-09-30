@@ -1,0 +1,5 @@
+-- start NGINX
+docker container run --publish 80:80 nginx
+
+-- RUNING NGINX DETACHED
+docker container run --publish 80:80 --detach nginx 
