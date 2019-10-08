@@ -1,0 +1,30 @@
+Cada contenedor se conecta a una red privada virtual llamada "bridge"
+
+Los contenedores se pueden comunicar entre si sin necesidad de exponer los puertos 
+
+se pueden crear diferentes redes, ya sea para diferentes aplicaciones o para mayor medida de seguridad
+
+
+
+// listar el uso de los puertos
+docker container port <CONTAINER_ID || NAME>
+
+// ver la ip del contenedor
+docker container inspect --format '{{ .NetworkSettings.IPAddress}}' <CONTAINER_ID || NAME >
+
+
+// Mostrar redes
+docker network ls 
+
+///Inspeccionar una red
+docker network inspect
+
+// crear una red
+docker network create --driver
+
+// vincular una red a un contenedor
+docker network connect 
+
+// Desvincular una red de un contenedor 
+docker network disconnect
+

@@ -22,6 +22,8 @@ docker container stats <CONTAINER ID || NAME>
 
 #######  ------------  GETTING INSIDE MY CONTAINER ---------------- ############
 docker container run -it <IMAGEN> <COMANDO>
+docker container exec -it <IMAGEN> <COMANDO>
+
 
 
 

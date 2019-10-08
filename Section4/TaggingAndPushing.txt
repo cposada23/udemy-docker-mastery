@@ -1,0 +1,1 @@
+docker image tag <SOURCE_IMAGE>[:OPTIONAL_TAG] <NEW_IMAGE>[:OPTIONAL_TAG]

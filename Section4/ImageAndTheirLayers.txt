@@ -1,0 +1,7 @@
+_---  TO SEE THE HISTORY OF AN IMAGE ----
+docker histoty <IMAGE_NAME>
+
+
+-- Return JSON metadata about the image ----
+docker image inspect <IMAGE_NAME>
+
